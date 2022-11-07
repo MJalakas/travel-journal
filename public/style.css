@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E5E5E5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display:flex;
+  justify-content:center;
+  padding-top:20px;
+}
+
+.App--content {
+  width:550px;
+  height:704px;
+  background-color:white;
+  font-family: 'Inter', sans-serif;
+  font-size:10.24px;
+  line-height:12.39px;
+  color:#2B283A;
+}
+
+.header {
+  height:55px;
+  background-color:#F55A5A;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:40px;
+}
+
+.card {
+  display:flex;
+  height:168px;
+  margin:18px 40px 18px 40px;
+  gap:19px;
+}
+
+.card--image {
+  width:125px;
+  height:100%;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.card--info {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100%;
+}
+
+.card--location {
+  display:flex;
+  gap:4px;
+  align-items:center;
+}
+
+.card--location-logo {
+  width:100%;
+}
+
+.card--title {
+  font-weight:700;
+  font-size:25px;
+  line-height:30px;
+  margin-top:4px;
+}
+
+.card--date {
+  margin:14px 0 9px 0;
+  font-weight: 700;
+}
+
+.card--description, .card--date {
+  line-height:15.36px;
+}
+
+.card--location-gmaps {
+  margin-left:8px;
+  color:#918E9B;
+}
+
+/* remove hr styling */
+hr {
+  border:0;
+  border-top:1px solid #555;
+  margin:0;
+  height:1px;
+}
+
+.card-separator:not(:last-child) {
+  margin:0 40px 0 40px;
+  border-color: #F5F5F5;
+}
+
+.card-separator:last-child {
+  display:none;
+}
